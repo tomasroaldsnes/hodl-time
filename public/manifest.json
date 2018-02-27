@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "HODLtime",
+  "name": "HODLtime - Time-Locked Ethereum Savings Account",
   "icons": [
     {
       "src": "favicon.ico",
