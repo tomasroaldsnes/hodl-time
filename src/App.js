@@ -6,6 +6,7 @@ import Details from "./components/Details";
 
 class App extends Component {
   render() {
+    const store = this.props.store;
     return (
       <div className="App">
         <header className="App-header">
@@ -14,7 +15,7 @@ class App extends Component {
         <div className="App-body">
           <Greeting/>
           <Buttons/>
-          <Details/>
+          <Details store={store}/>
         </div>
       </div>
     );
