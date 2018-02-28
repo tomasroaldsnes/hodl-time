@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
+import { observer } from 'mobx-react';
 import Greeting from "./components/Greeting";
 import Buttons from "./components/Buttons";
 import Details from "./components/Details";
 
+@observer
 class App extends Component {
+  // Load contract data
+  async componentWillMount() {
+    await this.props.store.refreshContractData();
+  }
+
   render() {
     const store = this.props.store;
     return (

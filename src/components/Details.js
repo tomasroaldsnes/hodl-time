@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {Component} from 'react';
+import {observer} from "mobx-react/index";
 
-export default function Details(props) {
-  const state = props.store.state;
-  return (
-    <table>
-      <tbody>
+@observer
+class Details extends Component {
+  render() {
+    const state = this.props.store.state;
+    return (
+      <table>
+        <tbody>
         <tr>
           <td>Your Address</td>
           <td>{state.currentAddress}</td>
@@ -33,7 +36,11 @@ export default function Details(props) {
           <td>Seconds Remaining</td>
           <td>{state.timeRemaining}</td>
         </tr>
-      </tbody>
-    </table>
-  );
-};
+        </tbody>
+      </table>
+    );
+  }
+}
+
+export default Details;
+
