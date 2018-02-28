@@ -20,7 +20,10 @@ class App extends Component {
           <h1 className="App-title">HODLtime.io</h1>
         </header>
         <div className="App-body">
-          <Greeting/>
+          <Greeting
+            timeRemaining={store.state.timeRemaining}
+            userBalance={store.state.userBalance}
+          />
           <Buttons store={store}/>
           <Details store={store}/>
         </div>

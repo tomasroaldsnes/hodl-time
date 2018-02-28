@@ -1,4 +1,5 @@
 import React from 'react';
+import ButtonWithdraw from "./ButtonWithdraw";
 
 export default function Buttons(props) {
   const store = props.store;
@@ -7,7 +8,7 @@ export default function Buttons(props) {
       <button onClick={()=>store.refreshContractData()}>Refresh</button>
       <button onClick={()=>store.setTime()}>Set Time</button>
       <button onClick={()=>store.depositEth()}>Deposit ETH</button>
-      <button onClick={()=>store.withdraw()}>Withdraw</button>
+      <ButtonWithdraw store={store}/>
     </p>
   );
 };
