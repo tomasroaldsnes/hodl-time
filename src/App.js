@@ -21,7 +21,7 @@ class App extends Component {
         </header>
         <div className="App-body">
           <Greeting/>
-          <Buttons/>
+          <Buttons store={store}/>
           <Details store={store}/>
         </div>
       </div>
