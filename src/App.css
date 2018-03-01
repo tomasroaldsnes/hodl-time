@@ -1,0 +1,38 @@
+.App {
+  text-align: left;
+}
+
+.App-header {
+  background-color: #222;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-body {
+  font-size: large;
+  padding: 0 20px;
+  max-width: 500px;
+}
+
+.App button {
+  width: 110px;
+  padding: 5px 10px;
+  margin: 0 10px 10px 0;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+table, th, td {
+  border: 1px solid #969696;
+}
+
+td {
+  padding: 5px 10px;
+}
